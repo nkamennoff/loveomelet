@@ -1,0 +1,79 @@
+{
+  "common": {
+    "appName": "Loveomelet",
+    "tagline": "Créez des Expériences Mémorables Ensemble",
+    "getStarted": "Commencer",
+    "learnMore": "En Savoir Plus",
+    "login": "Connexion",
+    "register": "S'inscrire",
+    "about": "À Propos",
+    "howItWorks": "Comment Ça Marche",
+    "faq": "FAQ",
+    "contact": "Contact"
+  },
+  "home": {
+    "hero": {
+      "title": "Créez des Expériences Mémorables Ensemble",
+      "description": "Loveomelet aide les couples à créer des moments significatifs à travers des activités mensuelles, construisant une année de souvenirs à chérir pour toujours."
+    },
+    "howItWorks": {
+      "title": "Comment Fonctionne Loveomelet",
+      "steps": {
+        "step1": {
+          "title": "Mot Mensuel",
+          "description": "Chaque mois, vous recevrez un mot aléatoire (un \"œuf\") de notre liste soigneusement sélectionnée de mots rares et intéressants."
+        },
+        "step2": {
+          "title": "Planifiez Ensemble",
+          "description": "Utilisez nos outils de réflexion pour réfléchir et planifier une activité liée à votre mot mensuel."
+        },
+        "step3": {
+          "title": "Créez des Souvenirs",
+          "description": "Réalisez votre activité ensemble et documentez-la avec des photos et des réflexions privées."
+        },
+        "step4": {
+          "title": "Surprise de Fin d'Année",
+          "description": "À la fin de l'année, révélez vos commentaires privés et créez un beau livre de souvenirs de vos expériences."
+        }
+      }
+    },
+    "gameModes": {
+      "title": "Choisissez Votre Expérience",
+      "lovingChefs": {
+        "title": "Chefs Amoureux",
+        "description": "Les deux partenaires partagent une responsabilité égale dans la planification et l'exécution de l'activité de chaque mois.",
+        "features": [
+          "Collaborez sur les idées",
+          "Partagez les responsabilités de planification",
+          "Vivez les activités ensemble",
+          "Contribuez tous les deux à la documentation"
+        ]
+      },
+      "chefAndCritic": {
+        "title": "Chef et Critique",
+        "description": "Alternez les rôles avec un partenaire qui planifie (le Chef) et l'autre qui documente (le Critique).",
+        "features": [
+          "Alternez les rôles chaque mois",
+          "Le Chef planifie et finance l'activité",
+          "Le Critique crée le rapport et la documentation",
+          "Responsabilités équilibrées dans le temps"
+        ]
+      }
+    },
+    "testimonials": {
+      "title": "Ce que Disent les Couples"
+    },
+    "cta": {
+      "title": "Prêt à Commencer Votre Voyage?",
+      "description": "Créez une année d'expériences inoubliables avec votre partenaire.",
+      "button": "Commencez Votre Loveomelet"
+    }
+  },
+  "footer": {
+    "tagline": "Créez des expériences mémorables avec votre partenaire",
+    "links": "Liens",
+    "contact": "Contact",
+    "email": "Email: info@loveomelet.com",
+    "copyright": "© {year} Loveomelet. Tous droits réservés."
+  }
+}

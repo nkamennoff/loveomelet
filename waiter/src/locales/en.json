@@ -1,0 +1,79 @@
+{
+  "common": {
+    "appName": "Loveomelet",
+    "tagline": "Create Memorable Experiences Together",
+    "getStarted": "Get Started",
+    "learnMore": "Learn More",
+    "login": "Login",
+    "register": "Register",
+    "about": "About",
+    "howItWorks": "How It Works",
+    "faq": "FAQ",
+    "contact": "Contact"
+  },
+  "home": {
+    "hero": {
+      "title": "Create Memorable Experiences Together",
+      "description": "Loveomelet helps couples create meaningful moments through monthly activities, building a year of memories to cherish forever."
+    },
+    "howItWorks": {
+      "title": "How Loveomelet Works",
+      "steps": {
+        "step1": {
+          "title": "Monthly Word",
+          "description": "Each month, you'll receive a random word (an \"egg\") from our curated list of rare and interesting words."
+        },
+        "step2": {
+          "title": "Plan Together",
+          "description": "Use our reflection tools to brainstorm and plan an activity related to your monthly word."
+        },
+        "step3": {
+          "title": "Create Memories",
+          "description": "Complete your activity together and document it with photos and private reflections."
+        },
+        "step4": {
+          "title": "Year-End Surprise",
+          "description": "At the end of the year, reveal your private comments and create a beautiful memory book of your experiences."
+        }
+      }
+    },
+    "gameModes": {
+      "title": "Choose Your Experience",
+      "lovingChefs": {
+        "title": "Loving Chefs",
+        "description": "Both partners share equal responsibility in planning and executing each month's activity.",
+        "features": [
+          "Collaborate on ideas",
+          "Share planning responsibilities",
+          "Experience activities together",
+          "Both contribute to documentation"
+        ]
+      },
+      "chefAndCritic": {
+        "title": "Chef and Critic",
+        "description": "Take turns with one partner planning (the Chef) and the other documenting (the Critic).",
+        "features": [
+          "Alternate roles each month",
+          "Chef plans and funds the activity",
+          "Critic creates the report and documentation",
+          "Balanced responsibilities over time"
+        ]
+      }
+    },
+    "testimonials": {
+      "title": "What Couples Are Saying"
+    },
+    "cta": {
+      "title": "Ready to Start Your Journey?",
+      "description": "Create a year of unforgettable experiences with your partner.",
+      "button": "Start Your Loveomelet"
+    }
+  },
+  "footer": {
+    "tagline": "Create memorable experiences with your partner",
+    "links": "Links",
+    "contact": "Contact",
+    "email": "Email: info@loveomelet.com",
+    "copyright": "© {year} Loveomelet. All rights reserved."
+  }
+}
