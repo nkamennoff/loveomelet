@@ -4,21 +4,25 @@
       <nav class="app-nav">
         <div class="logo">
           <NuxtLink to="/src/public">
-            <h1>Loveomelet</h1>
+            <h1>{{ $t('common.appName') }}</h1>
           </NuxtLink>
         </div>
         <div class="nav-links">
-          <NuxtLink to="/src/public">Home</NuxtLink>
-          <NuxtLink to="/about">About</NuxtLink>
-          <NuxtLink to="/how-it-works">How It Works</NuxtLink>
-          <!-- Language switcher placeholder -->
+          <NuxtLink to="/src/public">{{ $t('common.home') }}</NuxtLink>
+          <NuxtLink to="/about">{{ $t('common.about') }}</NuxtLink>
+          <NuxtLink to="/how-it-works">{{ $t('common.howItWorks') }}</NuxtLink>
+          <!-- Language switcher -->
           <div class="language-switcher">
-            <button>EN</button>
-            <button>FR</button>
+            <NuxtLink :to="switchLocalePath('en')" v-if="locale !== 'en'">
+              EN
+            </NuxtLink>
+            <NuxtLink :to="switchLocalePath('fr')" v-if="locale !== 'fr'">
+              FR
+            </NuxtLink>
           </div>
           <!-- Auth buttons -->
-          <NuxtLink to="/login" class="auth-button login">Login</NuxtLink>
-          <NuxtLink to="/register" class="auth-button register">Register</NuxtLink>
+          <NuxtLink to="/login" class="auth-button login">{{ $t('common.login') }}</NuxtLink>
+          <NuxtLink to="/register" class="auth-button register">{{ $t('common.register') }}</NuxtLink>
         </div>
       </nav>
     </header>
@@ -31,25 +35,25 @@
     <footer class="app-footer">
       <div class="footer-content">
         <div class="footer-section">
-          <h3>Loveomelet</h3>
-          <p>Create memorable experiences with your partner</p>
+          <h3>{{ $t('common.appName') }}</h3>
+          <p>{{ $t('footer.tagline') }}</p>
         </div>
         <div class="footer-section">
-          <h3>Links</h3>
+          <h3>{{ $t('footer.links') }}</h3>
           <ul>
-            <li><NuxtLink to="/src/public">Home</NuxtLink></li>
-            <li><NuxtLink to="/about">About</NuxtLink></li>
-            <li><NuxtLink to="/how-it-works">How It Works</NuxtLink></li>
-            <li><NuxtLink to="/faq">FAQ</NuxtLink></li>
+            <li><NuxtLink to="/src/public">{{ $t('common.home') }}</NuxtLink></li>
+            <li><NuxtLink to="/about">{{ $t('common.about') }}</NuxtLink></li>
+            <li><NuxtLink to="/how-it-works">{{ $t('common.howItWorks') }}</NuxtLink></li>
+            <li><NuxtLink to="/faq">{{ $t('common.faq') }}</NuxtLink></li>
           </ul>
         </div>
         <div class="footer-section">
-          <h3>Contact</h3>
-          <p>Email: info@loveomelet.com</p>
+          <h3>{{ $t('footer.contact') }}</h3>
+          <p>{{ $t('footer.email') }}</p>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; {{ new Date().getFullYear() }} Loveomelet. All rights reserved.</p>
+        <p>{{ $t('footer.copyright', { year: new Date().getFullYear() }) }}</p>
       </div>
     </footer>
   </div>
@@ -111,6 +115,12 @@
 
 .language-switcher button:hover {
   background-color: #f5f5f5;
+}
+
+.language-switcher button.active {
+  background-color: #ff6b6b;
+  color: white;
+  border-color: #ff6b6b;
 }
 
 .auth-button {
@@ -184,3 +194,8 @@
   text-align: center;
 }
 </style>
+
+<script setup>
+const switchLocalePath = useSwitchLocalePath();
+const { locale } = useI18n();
+</script>

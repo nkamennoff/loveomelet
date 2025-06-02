@@ -14,28 +14,22 @@ export default defineNuxtConfig({
     '@nuxt/test-utils',
     '@nuxt/icon',
     '@nuxt/fonts',
-    // '@nuxtjs/i18n' // Uncomment after installation
+    '@nuxtjs/i18n'
   ],
 
   // i18n configuration for multilingual support (English and French)
-  // i18n: {
-  //   locales: [
-  //     {
-  //       code: 'en',
-  //       name: 'English',
-  //       file: 'en.json'
-  //     },
-  //     {
-  //       code: 'fr',
-  //       name: 'Français',
-  //       file: 'fr.json'
-  //     }
-  //   ],
-  //   defaultLocale: 'en',
-  //   strategy: 'prefix_except_default',
-  //   langDir: 'locales/', // This is relative to srcDir, so it will be src/locales/
-  //   vueI18n: {
-  //     fallbackLocale: 'en'
-  //   }
-  // }
+  i18n: {
+    locales: [
+      {
+        code: 'en',
+        name: 'English',
+        file: 'en.json'
+      },
+      {
+        code: 'fr',
+        name: 'Français',
+        file: 'fr.json'
+      }
+    ],
+  }
 })

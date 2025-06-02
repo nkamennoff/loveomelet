@@ -3,70 +3,70 @@
     <!-- Hero Section -->
     <section class="hero-section">
       <div class="hero-content">
-        <h1>Create Memorable Experiences Together</h1>
-        <p>Loveomelet helps couples create meaningful moments through monthly activities, building a year of memories to cherish forever.</p>
+        <h1>{{ $t('home.hero.title') }}</h1>
+        <p>{{ $t('home.hero.description') }}</p>
         <div class="hero-buttons">
-          <NuxtLink to="/register" class="btn btn-primary">Get Started</NuxtLink>
-          <NuxtLink to="/how-it-works" class="btn btn-secondary">Learn More</NuxtLink>
+          <NuxtLink to="/register" class="btn btn-primary">{{ $t('common.getStarted') }}</NuxtLink>
+          <NuxtLink to="/how-it-works" class="btn btn-secondary">{{ $t('common.learnMore') }}</NuxtLink>
         </div>
       </div>
       <div class="hero-image">
         <!-- Placeholder for hero image -->
         <div class="image-placeholder">
-          <p>Couple enjoying an activity together</p>
+          <p>{{ $t('home.hero.imagePlaceholder', 'Couple enjoying an activity together') }}</p>
         </div>
       </div>
     </section>
 
     <!-- How It Works Section -->
     <section class="how-it-works-section">
-      <h2>How Loveomelet Works</h2>
+      <h2>{{ $t('home.howItWorks.title') }}</h2>
       <div class="steps-container">
         <div class="step">
           <div class="step-icon">1</div>
-          <h3>Monthly Word</h3>
-          <p>Each month, you'll receive a random word (an "egg") from our curated list of rare and interesting words.</p>
+          <h3>{{ $t('home.howItWorks.steps.step1.title') }}</h3>
+          <p>{{ $t('home.howItWorks.steps.step1.description') }}</p>
         </div>
         <div class="step">
           <div class="step-icon">2</div>
-          <h3>Plan Together</h3>
-          <p>Use our reflection tools to brainstorm and plan an activity related to your monthly word.</p>
+          <h3>{{ $t('home.howItWorks.steps.step2.title') }}</h3>
+          <p>{{ $t('home.howItWorks.steps.step2.description') }}</p>
         </div>
         <div class="step">
           <div class="step-icon">3</div>
-          <h3>Create Memories</h3>
-          <p>Complete your activity together and document it with photos and private reflections.</p>
+          <h3>{{ $t('home.howItWorks.steps.step3.title') }}</h3>
+          <p>{{ $t('home.howItWorks.steps.step3.description') }}</p>
         </div>
         <div class="step">
           <div class="step-icon">4</div>
-          <h3>Year-End Surprise</h3>
-          <p>At the end of the year, reveal your private comments and create a beautiful memory book of your experiences.</p>
+          <h3>{{ $t('home.howItWorks.steps.step4.title') }}</h3>
+          <p>{{ $t('home.howItWorks.steps.step4.description') }}</p>
         </div>
       </div>
     </section>
 
     <!-- Game Modes Section -->
     <section class="game-modes-section">
-      <h2>Choose Your Experience</h2>
+      <h2>{{ $t('home.gameModes.title') }}</h2>
       <div class="modes-container">
         <div class="mode-card">
-          <h3>Loving Chefs</h3>
-          <p>Both partners share equal responsibility in planning and executing each month's activity.</p>
+          <h3>{{ $t('home.gameModes.lovingChefs.title') }}</h3>
+          <p>{{ $t('home.gameModes.lovingChefs.description') }}</p>
           <ul>
-            <li>Collaborate on ideas</li>
-            <li>Share planning responsibilities</li>
-            <li>Experience activities together</li>
-            <li>Both contribute to documentation</li>
+            <li>{{ $t('home.gameModes.lovingChefs.features[0]') }}</li>
+            <li>{{ $t('home.gameModes.lovingChefs.features[1]') }}</li>
+            <li>{{ $t('home.gameModes.lovingChefs.features[2]') }}</li>
+            <li>{{ $t('home.gameModes.lovingChefs.features[3]') }}</li>
           </ul>
         </div>
         <div class="mode-card">
-          <h3>Chef and Critic</h3>
-          <p>Take turns with one partner planning (the Chef) and the other documenting (the Critic).</p>
+          <h3>{{ $t('home.gameModes.chefAndCritic.title') }}</h3>
+          <p>{{ $t('home.gameModes.chefAndCritic.description') }}</p>
           <ul>
-            <li>Alternate roles each month</li>
-            <li>Chef plans and funds the activity</li>
-            <li>Critic creates the report and documentation</li>
-            <li>Balanced responsibilities over time</li>
+            <li>{{ $t('home.gameModes.chefAndCritic.features[0]') }}</li>
+            <li>{{ $t('home.gameModes.chefAndCritic.features[1]') }}</li>
+            <li>{{ $t('home.gameModes.chefAndCritic.features[2]') }}</li>
+            <li>{{ $t('home.gameModes.chefAndCritic.features[3]') }}</li>
           </ul>
         </div>
       </div>
@@ -74,24 +74,24 @@
 
     <!-- Testimonials Section (Placeholder) -->
     <section class="testimonials-section">
-      <h2>What Couples Are Saying</h2>
+      <h2>{{ $t('home.testimonials.title') }}</h2>
       <div class="testimonials-container">
         <div class="testimonial">
-          <p>"Loveomelet helped us rediscover the joy of spending quality time together. We've created memories that will last a lifetime."</p>
-          <div class="testimonial-author">- Sarah & Michael</div>
+          <p>{{ $t('home.testimonials.testimonial1', '"Loveomelet helped us rediscover the joy of spending quality time together. We\'ve created memories that will last a lifetime."') }}</p>
+          <div class="testimonial-author">{{ $t('home.testimonials.author1', '- Sarah & Michael') }}</div>
         </div>
         <div class="testimonial">
-          <p>"The monthly challenges pushed us out of our comfort zone in the best way possible. We've tried things we never would have otherwise!"</p>
-          <div class="testimonial-author">- David & Emma</div>
+          <p>{{ $t('home.testimonials.testimonial2', '"The monthly challenges pushed us out of our comfort zone in the best way possible. We\'ve tried things we never would have otherwise!"') }}</p>
+          <div class="testimonial-author">{{ $t('home.testimonials.author2', '- David & Emma') }}</div>
         </div>
       </div>
     </section>
 
     <!-- CTA Section -->
     <section class="cta-section">
-      <h2>Ready to Start Your Journey?</h2>
-      <p>Create a year of unforgettable experiences with your partner.</p>
-      <NuxtLink to="/register" class="btn btn-primary">Start Your Loveomelet</NuxtLink>
+      <h2>{{ $t('home.cta.title') }}</h2>
+      <p>{{ $t('home.cta.description') }}</p>
+      <NuxtLink to="/register" class="btn btn-primary">{{ $t('home.cta.button') }}</NuxtLink>
     </section>
   </div>
 </template>
@@ -345,7 +345,7 @@
     flex-direction: column;
     text-align: center;
   }
-  
+
   .steps-container,
   .modes-container,
   .testimonials-container {

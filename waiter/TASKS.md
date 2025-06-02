@@ -8,7 +8,7 @@ Loveomelet is a SaaS application for couples to engage in monthly activities tog
 ### 1. Project Structure and Configuration
 - [x] Set up project directory structure (pages, components, layouts, etc.)
 - [x] Organize code-related folders into a global src directory
-- [ ] Configure internationalization (i18n) for English and French
+- [x] Configure internationalization (i18n) for English and French
 - [ ] Set up authentication and user management
 - [ ] Configure state management (Pinia or Vuex)
 - [ ] Set up API integration layer

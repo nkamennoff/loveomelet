@@ -9,12 +9,14 @@
     "about": "À Propos",
     "howItWorks": "Comment Ça Marche",
     "faq": "FAQ",
-    "contact": "Contact"
+    "contact": "Contact",
+    "home": "Accueil"
   },
   "home": {
     "hero": {
       "title": "Créez des Expériences Mémorables Ensemble",
-      "description": "Loveomelet aide les couples à créer des moments significatifs à travers des activités mensuelles, construisant une année de souvenirs à chérir pour toujours."
+      "description": "Loveomelet aide les couples à créer des moments significatifs à travers des activités mensuelles, construisant une année de souvenirs à chérir pour toujours.",
+      "imagePlaceholder": "Couple profitant d'une activité ensemble"
     },
     "howItWorks": {
       "title": "Comment Fonctionne Loveomelet",
@@ -61,7 +63,11 @@
       }
     },
     "testimonials": {
-      "title": "Ce que Disent les Couples"
+      "title": "Ce que Disent les Couples",
+      "testimonial1": "\"Loveomelet nous a aidés à redécouvrir la joie de passer du temps de qualité ensemble. Nous avons créé des souvenirs qui dureront toute une vie.\"",
+      "author1": "- Sarah & Michael",
+      "testimonial2": "\"Les défis mensuels nous ont poussés hors de notre zone de confort de la meilleure façon possible. Nous avons essayé des choses que nous n'aurions jamais faites autrement !\"",
+      "author2": "- David & Emma"
     },
     "cta": {
       "title": "Prêt à Commencer Votre Voyage?",
@@ -73,7 +79,7 @@
     "tagline": "Créez des expériences mémorables avec votre partenaire",
     "links": "Liens",
     "contact": "Contact",
-    "email": "Email: info@loveomelet.com",
+    "email": "Email: info{'@'}loveomelet.com",
     "copyright": "© {year} Loveomelet. Tous droits réservés."
   }
 }

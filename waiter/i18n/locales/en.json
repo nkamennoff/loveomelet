@@ -9,12 +9,14 @@
     "about": "About",
     "howItWorks": "How It Works",
     "faq": "FAQ",
-    "contact": "Contact"
+    "contact": "Contact",
+    "home": "Home"
   },
   "home": {
     "hero": {
       "title": "Create Memorable Experiences Together",
-      "description": "Loveomelet helps couples create meaningful moments through monthly activities, building a year of memories to cherish forever."
+      "description": "Loveomelet helps couples create meaningful moments through monthly activities, building a year of memories to cherish forever.",
+      "imagePlaceholder": "Couple enjoying an activity together"
     },
     "howItWorks": {
       "title": "How Loveomelet Works",
@@ -61,7 +63,11 @@
       }
     },
     "testimonials": {
-      "title": "What Couples Are Saying"
+      "title": "What Couples Are Saying",
+      "testimonial1": "\"Loveomelet helped us rediscover the joy of spending quality time together. We've created memories that will last a lifetime.\"",
+      "author1": "- Sarah & Michael",
+      "testimonial2": "\"The monthly challenges pushed us out of our comfort zone in the best way possible. We've tried things we never would have otherwise!\"",
+      "author2": "- David & Emma"
     },
     "cta": {
       "title": "Ready to Start Your Journey?",
@@ -73,7 +79,7 @@
     "tagline": "Create memorable experiences with your partner",
     "links": "Links",
     "contact": "Contact",
-    "email": "Email: info@loveomelet.com",
+    "email": "Email: info{'@'}loveomelet.com",
     "copyright": "© {year} Loveomelet. All rights reserved."
   }
 }
