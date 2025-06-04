@@ -1,12 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import { defineNuxtConfig } from 'nuxt/config';
+
 export default defineNuxtConfig({
   compatibilityDate: '2025-05-15',
-  devtools: { enabled: true },
+  devtools: {enabled: true},
 
   // Set the source directory to src
-  srcDir: 'src/',
-
-  // Note: Need to install @nuxtjs/i18n module with: npm install @nuxtjs/i18n
+  css: ["~/assets/css/main.css"],
   modules: [
     '@nuxt/content',
     '@nuxt/eslint',
@@ -14,8 +14,41 @@ export default defineNuxtConfig({
     '@nuxt/test-utils',
     '@nuxt/icon',
     '@nuxt/fonts',
-    '@nuxtjs/i18n'
+    '@nuxt/ui',
+    '@nuxtjs/i18n',
+    'nuxt-auth-utils',
+    '@pinia/nuxt',
   ],
+  vite: {
+    optimizeDeps: {
+      include: ["reflect-metadata", "fp-ts/Option"]
+    }
+  },
+  nitro: {
+    esbuild: {
+      options: {
+        target: 'esnext',
+        supported: {
+          decorators: true
+        },
+        tsconfigRaw: {
+          compilerOptions: {
+            experimentalDecorators: true,
+            emitDecoratorMetadata: true
+          }
+        }
+      }
+    },
+    typescript: {
+      tsConfig: {
+        compilerOptions: {
+          strict: true,
+          experimentalDecorators: true,
+          emitDecoratorMetadata: true,
+        }
+      }
+    }
+  },
 
   // i18n configuration for multilingual support (English and French)
   i18n: {
@@ -30,6 +63,16 @@ export default defineNuxtConfig({
         name: 'Français',
         file: 'fr.json'
       }
-    ],
+    ]
+  },
+  runtimeConfig: {
+    oauth: {
+      auth0: {
+        scope: ['openid', 'profile', 'email']
+      }
+    }
+  },
+  experimental: {
+    decorators: true
   }
-})
+});

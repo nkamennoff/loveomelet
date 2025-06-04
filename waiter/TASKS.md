@@ -9,9 +9,9 @@ Loveomelet is a SaaS application for couples to engage in monthly activities tog
 - [x] Set up project directory structure (pages, components, layouts, etc.)
 - [x] Organize code-related folders into a global src directory
 - [x] Configure internationalization (i18n) for English and French
-- [ ] Set up authentication and user management
-- [ ] Configure state management (Pinia or Vuex)
-- [ ] Set up API integration layer
+- [x] Set up authentication with Auth0 using nuxt-auth-utils
+- [x] Configure state management (Pinia or Vuex)
+- [x] Set up API integration layer
 - [ ] Configure routing with proper navigation guards
 - [ ] Set up testing framework
 

@@ -1,16 +1,42 @@
+<script setup>
+import UserIcon from '~/components/user-icon/user-icon.vue';
+import { match } from 'ts-pattern';
+
+const localPath = useLocalePath();
+
+const switchLocalePath = useSwitchLocalePath();
+  const { locale } = useI18n();
+  const { loggedIn, user, clear: clearSession } = useUserSession();
+
+const logout = async () => {
+  await clearSession();
+  await navigateTo(localPath('index'));
+};
+
+const onSelect = (action) => {
+  match(action)
+      .with('profile', () => navigateTo(localPath('/profile')))
+      .with('dashboard', () => navigateTo(localPath('/dashboard')))
+      .with('logout', () => logout())
+      .exhaustive();
+};
+
+</script>
+
+
 <template>
   <div class="app-layout">
     <header class="app-header">
       <nav class="app-nav">
         <div class="logo">
-          <NuxtLink to="/src/public">
+          <NuxtLink :to="localPath('index')">
             <h1>{{ $t('common.appName') }}</h1>
           </NuxtLink>
         </div>
         <div class="nav-links">
-          <NuxtLink to="/src/public">{{ $t('common.home') }}</NuxtLink>
-          <NuxtLink to="/about">{{ $t('common.about') }}</NuxtLink>
-          <NuxtLink to="/how-it-works">{{ $t('common.howItWorks') }}</NuxtLink>
+          <NuxtLink :to="localPath('index')">{{ $t('common.home') }}</NuxtLink>
+          <NuxtLink :to="localPath('about')">{{ $t('common.about') }}</NuxtLink>
+          <NuxtLink :to="localPath('how-it-works')">{{ $t('common.howItWorks') }}</NuxtLink>
           <!-- Language switcher -->
           <div class="language-switcher">
             <NuxtLink :to="switchLocalePath('en')" v-if="locale !== 'en'">
@@ -21,8 +47,12 @@
             </NuxtLink>
           </div>
           <!-- Auth buttons -->
-          <NuxtLink to="/login" class="auth-button login">{{ $t('common.login') }}</NuxtLink>
-          <NuxtLink to="/register" class="auth-button register">{{ $t('common.register') }}</NuxtLink>
+          <template v-if="loggedIn">
+            <UserIcon :user="user" @select="onSelect" />
+          </template>
+          <template v-else>
+            <a href="/api/auth/auth0" class="auth-button login" type="button">{{ $t('common.login') }}</a>
+          </template>
         </div>
       </nav>
     </header>
@@ -41,7 +71,7 @@
         <div class="footer-section">
           <h3>{{ $t('footer.links') }}</h3>
           <ul>
-            <li><NuxtLink to="/src/public">{{ $t('common.home') }}</NuxtLink></li>
+            <li><NuxtLink to="/">{{ $t('common.home') }}</NuxtLink></li>
             <li><NuxtLink to="/about">{{ $t('common.about') }}</NuxtLink></li>
             <li><NuxtLink to="/how-it-works">{{ $t('common.howItWorks') }}</NuxtLink></li>
             <li><NuxtLink to="/faq">{{ $t('common.faq') }}</NuxtLink></li>
@@ -194,8 +224,3 @@
   text-align: center;
 }
 </style>
-
-<script setup>
-const switchLocalePath = useSwitchLocalePath();
-const { locale } = useI18n();
-</script>
