@@ -12,7 +12,7 @@ Loveomelet is a SaaS application for couples to engage in monthly activities tog
 - [x] Set up authentication with Auth0 using nuxt-auth-utils
 - [x] Configure state management (Pinia or Vuex)
 - [x] Set up API integration layer
-- [ ] Configure routing with proper navigation guards
+- [x] Configure routing with proper navigation guards
 - [ ] Set up testing framework
 
 ### 2. Design System and UI Components

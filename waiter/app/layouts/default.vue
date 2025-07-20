@@ -2,7 +2,7 @@
 import UserIcon from '~/components/user-icon/user-icon.vue';
 import { match } from 'ts-pattern';
 
-const localPath = useLocalePath();
+const localePath = useLocalePath();
 
 const switchLocalePath = useSwitchLocalePath();
   const { locale } = useI18n();
@@ -10,13 +10,13 @@ const switchLocalePath = useSwitchLocalePath();
 
 const logout = async () => {
   await clearSession();
-  await navigateTo(localPath('index'));
+  await navigateTo(localePath('index'));
 };
 
 const onSelect = (action) => {
   match(action)
-      .with('profile', () => navigateTo(localPath('/profile')))
-      .with('dashboard', () => navigateTo(localPath('/dashboard')))
+      .with('profile', () => navigateTo(localePath('/profile')))
+      .with('dashboard', () => navigateTo(localePath('/dashboard')))
       .with('logout', () => logout())
       .exhaustive();
 };
@@ -29,14 +29,14 @@ const onSelect = (action) => {
     <header class="app-header">
       <nav class="app-nav">
         <div class="logo">
-          <NuxtLink :to="localPath('index')">
+          <NuxtLink :to="localePath('index')">
             <h1>{{ $t('common.appName') }}</h1>
           </NuxtLink>
         </div>
         <div class="nav-links">
-          <NuxtLink :to="localPath('index')">{{ $t('common.home') }}</NuxtLink>
-          <NuxtLink :to="localPath('about')">{{ $t('common.about') }}</NuxtLink>
-          <NuxtLink :to="localPath('how-it-works')">{{ $t('common.howItWorks') }}</NuxtLink>
+          <NuxtLink :to="localePath('index')">{{ $t('common.home') }}</NuxtLink>
+          <NuxtLink :to="localePath('about')">{{ $t('common.about') }}</NuxtLink>
+          <NuxtLink :to="localePath('how-it-works')">{{ $t('common.howItWorks') }}</NuxtLink>
           <!-- Language switcher -->
           <div class="language-switcher">
             <NuxtLink :to="switchLocalePath('en')" v-if="locale !== 'en'">
