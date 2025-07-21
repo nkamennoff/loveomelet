@@ -5,7 +5,7 @@ import {UserService} from "../applications/user/services/user.service";
 import type {UserCreate, UserQuery} from "../applications/user/ports/in";
 import type { UserRepository } from "../applications/user/ports/out";
 import {UserInMemoryRepository} from "../adapters/user-in-memory-repository";
-import { userRepositoryKey, userCreateKey, userQueryKey } from "../utils/container";
+import { userRepositoryKey, userCreateKey, userQueryKey } from "../utils/symbols";
 
 declare module 'nitropack' {
     interface NitroApp {

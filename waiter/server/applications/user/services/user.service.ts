@@ -3,7 +3,7 @@ import type { UserRepository } from '../ports/out';
 import type { UserQuery, UserCreate } from '../ports/in';
 import type { Option } from "fp-ts/es6/Option";
 import { inject, injectable } from "inversify";
-import { userRepositoryKey } from "../../../utils/container";
+import { userRepositoryKey } from "../../../utils/symbols";
 
 @injectable()
 export class UserService implements UserCreate, UserQuery {

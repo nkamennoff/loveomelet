@@ -1,12 +1,12 @@
-import type {Container, ServiceIdentifier} from 'inversify';
+import type {Container} from 'inversify';
 import { useNitroApp } from 'nitropack/runtime';
-import type {UserRepository} from "@server/applications/user/ports/out";
-import type {UserCreate, UserQuery} from "@server/applications/user/ports/in";
 
-export const userCreateKey: ServiceIdentifier<UserCreate> = Symbol.for('__UserCreate__');
-export const userQueryKey: ServiceIdentifier<UserQuery> = Symbol.for('__UserQuery__');
-export const userRepositoryKey: ServiceIdentifier<UserRepository> = Symbol.for('__UserRepository__');
+// Re-export symbols from symbols.ts
+export * from './symbols';
 
+/**
+ * Get the container instance from NitroApp
+ */
 export function useContainer(): Container {
     const nitroApp = useNitroApp();
 
