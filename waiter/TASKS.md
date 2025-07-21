@@ -43,7 +43,7 @@ Loveomelet is a SaaS application for couples to engage in monthly activities tog
 - [ ] Add account settings page
 
 ### 5. Game Setup and Management
-- [ ] Create game creation flow
+- [x] Create game creation flow
 - [ ] Implement partner invitation and acceptance
 - [ ] Design and implement game mode selection (Loving Chefs vs. Chef and Critic)
 - [ ] Create tutorial for first-time players

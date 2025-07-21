@@ -39,10 +39,10 @@ const onSelect = (action) => {
           <NuxtLink :to="localePath('how-it-works')">{{ $t('common.howItWorks') }}</NuxtLink>
           <!-- Language switcher -->
           <div class="language-switcher">
-            <NuxtLink :to="switchLocalePath('en')" v-if="locale !== 'en'">
+            <NuxtLink v-if="locale !== 'en'" :to="switchLocalePath('en')">
               EN
             </NuxtLink>
-            <NuxtLink :to="switchLocalePath('fr')" v-if="locale !== 'fr'">
+            <NuxtLink v-if="locale !== 'fr'" :to="switchLocalePath('fr')">
               FR
             </NuxtLink>
           </div>

@@ -1,5 +1,5 @@
-import type {User} from "../../../../domains/user/entities";
-import { type Option } from 'fp-ts/es6/Option';
+import type {User} from "@server/domains/user/entities";
+import type { Option } from 'fp-ts/es6/Option';
 
 export interface UserRepository {
     save(user: User): Promise<User>;

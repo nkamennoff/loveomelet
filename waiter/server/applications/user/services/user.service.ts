@@ -1,4 +1,4 @@
-import type { User, UserCreateRequest } from '@server/domains/user/entities';
+import type { User, UserCreateRequest } from '../../../domains/user/entities';
 import type { UserRepository } from '../ports/out';
 import type { UserQuery, UserCreate } from '../ports/in';
 import type { Option } from "fp-ts/es6/Option";

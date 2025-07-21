@@ -1,4 +1,4 @@
-import {describe, it, expect, beforeEach, vi, afterEach} from "vitest";
+import {describe, it, expect, vi, afterEach} from "vitest";
 import { UserService } from "../../server/applications/user/services/user.service";
 import type { User, UserCreateRequest } from "../../server/domains/user/entities";
 import { mockUserRepository } from "./mocks/user-repository.mock";
